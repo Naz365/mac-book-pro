@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Macbook-pro</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="mt-16 w-11/12 mx-auto mb-4">
+      <section class="mx-auto w-4/5 grid grid-cols-2">
+        <!-- IMAGE -->
+        <img src="./images/mac.png" class="w-2/5" alt="macbook image" />
+
+        <aside class="mb-8">
+          <h1 class="font-semibold text-3xl">
+            Customize your Blue 24-inch iMac with Apple M1 chip.
+          </h1>
+          <p class="mt-4">
+            Apple M1 chip with 8-core CPU with 4 performance cores and 4
+            efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified
+            memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouse
+            Magic Keyboard - US English
+          </p>
+          <p class="mt-10 font-bold mb-2">Memory</p>
+
+          <button
+            class="
+              bg-transparent
+              hover:bg-blue-500
+              text-blue-700
+              font-semibold
+              hover:text-white
+              py-2
+              px-4
+              border border-blue-500
+              hover:border-transparent
+              rounded
+            "
+          >
+            <span id="memory-1">8GB unified memory</span>
+          </button>
+          <button
+            class="
+              bg-transparent
+              hover:bg-blue-500
+              text-blue-700
+              font-semibold
+              hover:text-white
+              py-2
+              px-4
+              border border-blue-500
+              hover:border-transparent
+              rounded
+            "
+          >
+            <span id="memory-2">16GB unified memory</span>
+          </button>
+          <p class="mt-10 font-bold mb-2">Storage</p>
+
+          <button
+            class="
+              bg-transparent
+              hover:bg-blue-500
+              text-blue-700
+              font-semibold
+              hover:text-white
+              py-2
+              px-4
+              border border-blue-500
+              hover:border-transparent
+              rounded
+            "
+          >
+            <span id="SSD-1"> 256GB SSD storage</span>
+          </button>
+          <button
+            class="
+              bg-transparent
+              hover:bg-blue-500
+              text-blue-700
+              font-semibold
+              hover:text-white
+              py-2
+              px-4
+              border border-blue-500
+              hover:border-transparent
+              rounded
+            "
+          >
+            <span id="SSD-2"> 512GB SSD storage</span>
+          </button>
+          <button
+            class="
+              bg-transparent
+              hover:bg-blue-500
+              text-blue-700
+              font-semibold
+              hover:text-white
+              py-2
+              px-4
+              border border-blue-500
+              hover:border-transparent
+              rounded
+            "
+          >
+            <span id="SSD-3"> 1TB SSD storage</span>
+          </button>
+
+          <p class="mt-10 font-bold mb-2">Choose your delivery option</p>
+
+          <button
+            class="
+              bg-transparent
+              hover:bg-blue-500
+              text-blue-700
+              font-semibold
+              hover:text-white
+              py-2
+              px-4
+              border border-blue-500
+              hover:border-transparent
+              rounded
+            "
+          >
+            <span id="free-delivery">Friday, Aug 25 Free Prime Delivery</span>
+          </button>
+          <button
+            class="
+              bg-transparent
+              hover:bg-blue-500
+              text-blue-700
+              font-semibold
+              hover:text-white
+              py-2
+              px-4
+              border border-blue-500
+              hover:border-transparent
+              rounded
+            "
+          >
+            <span id="charged-delivery"
+              >Friday, Aug 21 Delivery charge $20</span
+            >
+          </button>
+
+          <div class="grid grid-cols-2 mt-8">
+            <div>
+              <p class="mt-2">Best price</p>
+              <hr class="bg-gray-300" />
+              <p class="mt-2">Extra Memory Cost</p>
+              <hr class="bg-gray-300" />
+              <p class="mt-2">Extra Storage Cost</p>
+              <hr class="bg-gray-300" />
+              <p class="mt-2">Delivery charge</p>
+              <hr class="bg-black" />
+              <p class="mt-2 font-bold">Total price</p>
+              <hr class="bg-gray-300 mt-3.5" />
+            </div>
+
+            <div>
+              <p class="mt-2">$ <span id="best-price">1299</span></p>
+              <hr class="bg-gray-300" />
+
+              <p class="mt-2">$ <span id="memory-cost">0</span></p>
+              <hr class="bg-gray-300" />
+              <p class="mt-2">$ <span id="storage-cost">0</span></p>
+              <hr class="bg-gray-300" />
+              <p class="mt-2">$ <span id="delivery-cost">0</span></p>
+              <hr class="bg-black" />
+              <p class="mt-2 font-bold">$ <span id="total-price">1299</span></p>
+              <hr class="bg-gray-300 mt-3.5" />
+            </div>
+          </div>
+
+          <p class="mt-8 font-semibold">Add Promo code</p>
+          <input
+            id="promo-input"
+            class="bg-white-200 border-2 border-gray-200 rounded py-2 px-4"
+            type="text"
+          />
+
+          <button
+            class="
+              bg-transparent
+              hover:bg-red-500
+              text-red-700
+              font-semibold
+              hover:text-white
+              py-2
+              px-4
+              border border-red-500
+              hover:border-transparent
+              rounded
+            "
+          >
+            <span id="promo-btn"> Apply</span>
+          </button>
+        </aside>
+      </section>
+      <!-- TOTAL PRICE -->
+      <hr class="w-full" />
+      <h3 class="text-3xl font-semibold text-center">
+        Total : $ <span id="final-total">1299</span>
+      </h3>
+    </main>
+    <script src="./js/mac.js"></script>
+  </body>
+</html>
